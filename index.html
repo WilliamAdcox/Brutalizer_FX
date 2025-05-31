@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brutalizer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:700|Fira+Mono:700|Anton|Bebas+Neue|Oswald:700|Rubik+Mono+One|Black+Han+Sans|Bungee|Staatliches|Archivo+Black|Unica+One|Chivo+Mono:700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brutal-title">BRUTALIZER</h1>
+    <div class="controls-row">
+      <label class="upload-btn">
+        <input type="file" id="image-upload" accept="image/png, image/jpeg" style="display:none">
+        <span>UPLOAD IMAGE</span>
+      </label>
+      <input type="text" id="fallback-text" placeholder="FALLBACK TEXT">
+      <div class="font-controls">
+        <label for="font-select" class="font-label">FALLBACK FONT</label>
+        <select id="font-select">
+          <option value="Inter, Arial, sans-serif">Inter (Default)</option>
+          <option value="IBM Plex Mono, monospace">IBM Plex Mono</option>
+          <option value="Fira Mono, monospace">Fira Mono</option>
+          <option value="Anton, sans-serif">Anton</option>
+          <option value="Bebas Neue, sans-serif">Bebas Neue</option>
+          <option value="Oswald, sans-serif">Oswald</option>
+          <option value="Rubik Mono One, monospace">Rubik Mono One</option>
+          <option value="Black Han Sans, sans-serif">Black Han Sans</option>
+          <option value="Bungee, cursive">Bungee</option>
+          <option value="Staatliches, sans-serif">Staatliches</option>
+          <option value="Archivo Black, sans-serif">Archivo Black</option>
+          <option value="Unica One, sans-serif">Unica One</option>
+          <option value="Chivo Mono, monospace">Chivo Mono</option>
+        </select>
+        <label for="font-size-select" class="font-size-label">SIZE</label>
+        <select id="font-size-select">
+          <option value="48">48px</option>
+          <option value="64">64px</option>
+          <option value="80">80px</option>
+          <option value="96">96px</option>
+          <option value="112">112px</option>
+          <option value="128" selected>128px</option>
+          <option value="144">144px</option>
+          <option value="160">160px</option>
+        </select>
+      </div>
+    </div>
+    <div class="main-content">
+      <canvas id="brutalizer-canvas"></canvas>
+      <div class="controls-panel">
+        <label class="effect-label">EFFECT
+          <select id="effect-select"></select>
+        </label>
+        <label class="strength-label">DISTORTION STRENGTH
+          <input type="number" id="distortion-strength" value="50" step="1">
+        </label>
+        <div id="effect-params"></div>
+        <div class="button-row">
+          <button id="reset-btn">RESET</button>
+          <button id="export-btn">EXPORT PNG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
