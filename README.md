@@ -14,7 +14,7 @@ just to say that you could. So, at the end of the day, even if this
 tool serves no real purpose since there are far better and more-polished
 applications out there, at least I've learned a lot, and hopefully you
 will too. That being said, I'm not sure if any of this makes sense
-since its 4:32 AM and I've been up since 8 AM, but yeah.
+since it's 4:32 AM and I've been up since 8 AM, but yeah.
 Image editor website, woo hoo oh yeah, comp sci mini project done,
 that was honestly pretty fun, second "real" personal project done and
 over with, here's to a thousand million trillion more, cheers,
